@@ -9,6 +9,6 @@ data['label'] = data['path'].apply(lambda path: 'dog' if '/Dog' in path else 'ca
 # Save the data for future use
 data.save('cats-dogs.sframe')
 
-# Explore interactively
-data.explore()
+# Explore interactively (Requires GUI)
+# data.explore()
 
