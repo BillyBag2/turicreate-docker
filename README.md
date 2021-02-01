@@ -6,7 +6,7 @@ cd docker
 docker build -t billybag2/turicreate:latest .
 ```
 ## Running image for the first time to create container.
-'''
+```
 docker run -it --name tc billybag2/turicreate
 ```
 ## Starting the created container ofter exiting. 
