@@ -38,6 +38,8 @@ source bin/activate
 ```
 Once inside the vertualenv
 ```
-cd samples/image-clasification/
-./1_makefram.py
+cd samples/image-clasifi1cation/
+python 1_makeframe.py
+python 2_train.py
+
 ```
