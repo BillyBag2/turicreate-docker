@@ -23,18 +23,21 @@ cd /venv && source bin/activate && <my custom command>
  To not enter the virtualenv start the container with the command
   ```bash```
 
-# Samples
+# About Samples
 ## Image Classification
 ### Original Page
 https://apple.github.io/turicreate/docs/userguide/image_classifier/
-### Required download
+### Files are downloaded to the docker image when it is built
  * Page: https://www.microsoft.com/en-us/download/confirmation.aspx?id=54765
  * Direct: https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip
 ### Running example
+If not in virtualenv...
 ```
-cd venv
+cd /venv
 source bin/activate
-cd samples
-1_makefram.py
-...
+```
+Once inside the vertualenv
+```
+cd samples/image-clasification/
+./1_makefram.py
 ```
