@@ -1,6 +1,8 @@
 # turicreate-docker
-
-
+```
+cd docker
+docker build -t billybag2/turicreate:latest .
+```
 # Samples
 ## Image Classification
 ### Original Page
