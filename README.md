@@ -1,8 +1,28 @@
 # turicreate-docker
+
+## Building image for the first time.
 ```
 cd docker
 docker build -t billybag2/turicreate:latest .
 ```
+## Running image for the first time to create container.
+'''
+docker run -it --name tc billybag2/turicreate
+```
+## Starting the created container ofter exiting. 
+```
+docker start -i tc
+```
+
+## Using container with a command.
+The default command takes you to the venv. If you overide the command then include using the virtual ennv in the custom command.
+```
+cd /venv && source bin/activate && <my custom command>
+```
+ ## Using container without virtualenv
+ To not enter the virtualenv start the container with the command
+  ```bash```
+
 # Samples
 ## Image Classification
 ### Original Page
