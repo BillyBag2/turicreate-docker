@@ -22,7 +22,7 @@ docker run -it --name tc billybag2/turicreate
 or ...
 
 ```
-docker run -it --name tc billybag2/turicreategpu
+ docker run --runtime=nvidia -it --name tc billybag2/turicreategpu
 ```
 
 ## Starting the created docker container "tc" after it has exited.
