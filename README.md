@@ -11,7 +11,7 @@ or for GPU...
 
 ```
 cd docker
-docker build -f DockerFile.gpu -t billybag2/turicreategpu:latest .
+docker build -f Dockerfile.gpu -t billybag2/turicreategpu:latest .
 ```
 
 ## Running the docker image for the first time to create docker container "tc".
