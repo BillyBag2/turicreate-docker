@@ -1,25 +1,44 @@
 # turicreate-docker
 
 ## Building docker image billybag2/turicreate for the first time.
+
 ```
 cd docker
 docker build -t billybag2/turicreate:latest .
 ```
+
+or for GPU...
+
+```
+cd docker
+docker build -f Dockerfile.gpu -t billybag2/turicreategpu:latest .
+```
+
 ## Running the docker image for the first time to create docker container "tc".
+
 ```
 docker run -it --name tc billybag2/turicreate
 ```
-## Starting the created docker container "tc" after it has exited. 
+or ...
+
+```
+ docker run --runtime=nvidia -it --name tc billybag2/turicreategpu
+```
+
+## Starting the created docker container "tc" after it has exited.
+
 ```
 docker start -i tc
 ```
 
 ## Using the docker container tc with a command.
+
 The default command takes you to the venv. If you overide the command then include using the virtual ennv in the custom command.
 ```
 cd /venv && source bin/activate && <my custom command>
 ```
  ## Using the docker container tc without virtualenv
+ 
  To not enter the virtualenv start the container with the command
   ```bash```
 
